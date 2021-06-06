@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
-window.renderWallet = (containerId, history) => {
+window.renderCredit = (containerId, history) => {
   ReactDOM.render(
     <App history={history} />,
     document.getElementById(containerId),
@@ -13,7 +13,7 @@ window.renderWallet = (containerId, history) => {
   serviceWorker.unregister();
 };
 
-window.unmountWallet = containerId => {
+window.unmountCredit = containerId => {
   ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
 };
 
